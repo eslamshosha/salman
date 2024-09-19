@@ -596,11 +596,13 @@
     align-items: center;
     gap: 24px;
   }
-  .swiper-slide-active {
-    padding-inline-end: 100px;
-  }
-  .swiper-slide-duplicate-active {
-    padding-inline-start: 100px;
+  @include min-768 {
+    .swiper-slide-active {
+      padding-inline-end: 100px;
+    }
+    .swiper-slide-duplicate-active {
+      padding-inline-start: 100px;
+    }
   }
 }
 .partners-head {

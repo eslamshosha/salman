@@ -104,8 +104,8 @@ $(document).ready(function () {
       enabled: false,
     },
     grid: {
-      fill: 'row',
-      rows: 2
+      fill: "row",
+      rows: 2,
     },
     slidesPerView: 1,
     spaceBetween: 20,
@@ -114,6 +114,20 @@ $(document).ready(function () {
       clickable: true,
     },
     loop: true,
+    breakpoints: {
+      0: {
+        grid: {
+          fill: "row",
+          rows: 1,
+        },
+      },
+      767: {
+        grid: {
+          fill: "row",
+          rows: 2,
+        },
+      },
+    },
     on: {
       init: function (swiper) {
         lazyLoad();

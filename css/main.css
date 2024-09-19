@@ -1372,11 +1372,13 @@ html[dir=ltr] .progress-bar {
   align-items: center;
   gap: 24px;
 }
-.partners-slider .swiper-slide-active {
-  padding-inline-end: 100px;
-}
-.partners-slider .swiper-slide-duplicate-active {
-  padding-inline-start: 100px;
+@media only screen and (min-width: 768px) {
+  .partners-slider .swiper-slide-active {
+    padding-inline-end: 100px;
+  }
+  .partners-slider .swiper-slide-duplicate-active {
+    padding-inline-start: 100px;
+  }
 }
 
 .partners-head {
