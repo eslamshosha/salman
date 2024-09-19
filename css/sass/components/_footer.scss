@@ -1,0 +1,75 @@
+footer {
+  position: relative;
+  overflow: hidden;
+  background-color: $main;
+  z-index: 1;
+  margin-top: 160px;
+  padding: 88px 0 30px;
+  @include max-991 {
+    margin-top: 60px;
+    padding: 40px 0 20px;
+  }
+  &::after {
+    content: "";
+    background-image: url(../images/main-bg.png);
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    width: 100%;
+    opacity: 0.02;
+  }
+}
+.social {
+  @include flexCenter;
+  gap: 50px;
+  margin-bottom: 70px;
+  @include max-767 {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+}
+.social a {
+  text-decoration: none !important;
+}
+a.social-link {
+  @include flexCenter;
+  aspect-ratio: 1;
+  width: 65px;
+  font-size: 28px;
+  color: #fff;
+  border-radius: 20px;
+  background-color: rgba(201, 192, 178, 0.1);
+  transition: all 0.3s ease-in-out;
+  @include max-767 {
+    width: 50px;
+  }
+  img {
+    max-width: 32px;
+    @include max-767 {
+      max-width: 24px;
+    }
+  }
+}
+a.social-link:hover {
+  background-color: rgba(201, 192, 178, 0.3);
+}
+.copy-right {
+  display: block;
+  font-size: 25px;
+  font-weight: 500;
+  color: $white;
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+  }
+  @include max-767 {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      display: block;
+    }
+  }
+}
